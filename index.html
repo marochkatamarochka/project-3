@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -38,7 +42,7 @@
                 <h1 class="preview__title">Авторские туры по Азии</h1>
                 <p class="preview__text">Открой для себя Азию</p>
                 <div class="preview__button">
-                    <button class="button">ПОДРОБНЕЕ</button>
+                    <button class="preview__button-include">ПОДРОБНЕЕ</button>
                 </div>
             </section>
             <section class="tours">
@@ -66,16 +70,16 @@
                             <p class="tours__description">Равным образом постоянное обеспечение нашей деятельности
                                 позволяет оценить значение систем массового участия.</p>
                             <div class="tours__button">
-                                <button class="button">Смотреть</button>
+                                <button class="tours__button-include">Смотреть</button>
                             </div>
                         </div>
                     </li>
 
 
-                    <ul class="tours__item">
-                        <li class="tours__img">
+                    <li class="tours__item">
+                        <div class="tours__img">
                             <img src="img/pool.png" alt="Бали" class="tours__img-include">
-                        </li>
+                        </div>
                         <div class="tours__content">
                             <h3 class="tours__subtitle">Бали</h3>
                             <ul class="tours__conditions">
@@ -91,16 +95,16 @@
                             <p class="tours__description">Равным образом постоянное обеспечение нашей деятельности
                                 позволяет оценить значение систем массового участия.</p>
                             <div class="tours__button">
-                                <button class="button">Смотреть</button>
+                                <button class="tours__button-include">Смотреть</button>
                             </div>
                         </div>
-                    </ul>
+                    </li>
 
 
-                    <ul class="tours__item">
-                        <li class="tours__img">
+                    <li class="tours__item">
+                        <div class="tours__img">
                             <img src="img/ocean.png" alt="Индонезия" class="tours__img-include">
-                        </li>
+                        </div>
                         <div class="tours__content">
                             <h3 class="tours__subtitle">Индонезия</h3>
                             <ul class="tours__conditions">
@@ -113,14 +117,14 @@
                                     <p class="tours__conditions-case">Завтраки</p>
                                 </li>
                             </ul>
-                        </div>
-                    </ul>
+                        
                     <p class="tours__description">Равным образом постоянное обеспечение нашей деятельности
                         позволяет оценить значение систем массового участия.</p>
                     <div class="tours__button">
-                        <button class="button">Смотреть</button>
+                        <button class="tours__button-include">Смотреть</button>
                     </div>
-                </ul>
+                </div>
+            </li>
                 </ul>
             </section>
             <section class="news">
@@ -150,8 +154,9 @@
                             </p>
                 </ul>
                 <div class="paginator">
+                    <div class="paginator__display">Страница 1 из 7</div>
                     <ul class="paginator__list">
-                        <li class="paginator__item">
+                        <li class="paginator__item paginator__item-active">
                             <a href="#" class="paginator__link">1</a>
                         </li>
                         <li class="paginator__item">
@@ -175,6 +180,7 @@
                     </ul>
                 </div>
             </section>
+
             <section class="about">
                 <div class="about__decor">
                     <img src="img/gates.png" alt="" class="about__decor-picture">
@@ -190,13 +196,14 @@
                         <button class="button">Подробнее</button>
                     </div>
                 </div>
-            </section>f
+            </section>
         </main>
         <footer class="footer">
+            <div class="conteiner footer-conteiner__content">
             <a href="#" class="logo__link">
-                <img src="img/logo 2.png" alt="logo" class="logo__img">
+                <img src="img/logo 2.png" alt="logo" class="logo__img2">
             </a>
-            <nav class="menu">
+            <nav class="menu"> 
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a href="#" class="menu__link">Главная</a>
@@ -210,32 +217,33 @@
             </nav>
             <div class="socials">
                 <ul class="social__list">
-                    <li class="social__item">
+                    <li class="social__item social__icon-tg">
                         <a href="#" class="social__link">
-                            <img src="img/telegram.png" alt="" class="social__icon">
+                           
                         </a>
                     </li>
-                    <li class="social__item">
+                    <li class="social__item social__icon-vk">
                         <a href="#" class="social__link">
-                            <img src="img/vk.png" alt="" class="social__icon">
+                           
                         </a>
                     </li>
-                    <li class="social__item">
+                    <li class="social__item social__icon-fb">
                         <a href="#" class="social__link">
-                            <img src="img/f.png" alt="" class="social__icon">
+                         
                         </a>
                     </li>
-                    <li class="social__item">
+                    <li class="social__item social__icon-in">
                         <a href="#" class="social__link">
-                            <img src="img/in.png" alt="" class="social__icon">
+                           
                         </a>
                     </li>
                 </ul>
             </div>
-            <address class="contacts">
+            <address class="footer__contacts">
                 <div class="contacts__text">Бесплатный звонок по России</div>
-                <a href="#" class="contacts__phone"> 8 800 700 30 30 </a>
+                <a href="#" class="footer__contacts-phone"> 8 800 700 30 30 </a>
             </address>
+            </div>
         </footer>
     </div>
 </body>
