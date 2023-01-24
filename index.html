@@ -13,8 +13,9 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper wrapper-main">
         <header class="header">
+            <div class="container">
             <div class="logo">
                 <a href="#" class="logo__link">
                     <img src="img/logo.png" alt="logo" class="logo__img">
@@ -26,7 +27,7 @@
                         <a href="#" class="menu__link">Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Услуги</a>
+                        <a href="services.html " class="menu__link">Услуги</a>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Отзывы</a>
@@ -36,16 +37,23 @@
                 <a href="#" class="contacts__phone"> 8 800 700 30 30 </a>
                 <div class="contacts__schedule">График работы</div>
             </address>
+            </div>
         </header>
+        
         <main class="main">
             <section class="preview">
+                <div class="container">
+                    <div class="preview__content">
                 <h1 class="preview__title">Авторские туры по Азии</h1>
                 <p class="preview__text">Открой для себя Азию</p>
                 <div class="preview__button">
-                    <button class="preview__button-include">ПОДРОБНЕЕ</button>
+                    <button class="btn">ПОДРОБНЕЕ</button>
+                </div>
+                    </div>
                 </div>
             </section>
             <section class="tours">
+                <div class="container">
                 <h2 class="tours__title">
                     Горящие туры
                     <img src="img/flame.png" alt="Тайланд" class="tours__title-icon">
@@ -70,7 +78,8 @@
                             <p class="tours__description">Равным образом постоянное обеспечение нашей деятельности
                                 позволяет оценить значение систем массового участия.</p>
                             <div class="tours__button">
-                                <button class="tours__button-include">Смотреть</button>
+                                <button class="tours__button-include btn btn--size-middle 
+                                btn--them-bordered">Смотреть</button>
                             </div>
                         </div>
                     </li>
@@ -95,7 +104,8 @@
                             <p class="tours__description">Равным образом постоянное обеспечение нашей деятельности
                                 позволяет оценить значение систем массового участия.</p>
                             <div class="tours__button">
-                                <button class="tours__button-include">Смотреть</button>
+                                <button class="tours__button-include btn btn--size-middle 
+                                btn--them-bordered">Смотреть</button>
                             </div>
                         </div>
                     </li>
@@ -121,13 +131,16 @@
                     <p class="tours__description">Равным образом постоянное обеспечение нашей деятельности
                         позволяет оценить значение систем массового участия.</p>
                     <div class="tours__button">
-                        <button class="tours__button-include">Смотреть</button>
+                        <button class="tours__button-include btn btn--size-middle 
+                        btn--them-bordered">Смотреть</button>
                     </div>
                 </div>
             </li>
                 </ul>
+                </div>
             </section>
             <section class="news">
+                <div class="container">
                 <h2 class="news__title">Новости и акции</h2>
                 <ul class="news__list">
                     <li class="news__item">
@@ -152,6 +165,8 @@
                             <p class="news__text">
                                 В сезон больших волн скидка на путевку в Тайланд на остров серфенгистов. Удачного пути!
                             </p>
+                        </div>
+                    </li>
                 </ul>
                 <div class="paginator">
                     <div class="paginator__display">Страница 1 из 7</div>
@@ -179,9 +194,11 @@
                         </li>
                     </ul>
                 </div>
+                </div>
             </section>
 
             <section class="about">
+                <div class="container about__container">
                 <div class="about__decor">
                     <img src="img/gates.png" alt="" class="about__decor-picture">
                 </div>
@@ -193,17 +210,20 @@
                             а начинающему оратору отточить навык публичных выступлений в домашних условиях. </p>
                     </div>
                     <div class="about__button">
-                        <button class="button">Подробнее</button>
+                        <button class="btn">Подробнее</button>
                     </div>
+                </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <div class="conteiner footer-conteiner__content">
-            <a href="#" class="logo__link">
-                <img src="img/logo 2.png" alt="logo" class="logo__img2">
-            </a>
-            <nav class="menu"> 
+            <div class="container footer-container__content">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <img src="img/logo.png" alt="logo" class="logo__img">
+                    </a>
+                </div>
+            <nav class="menu footer__menu"> 
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a href="#" class="menu__link">Главная</a>
@@ -215,7 +235,7 @@
                         <a href="#" class="menu__link">Отзывы</a>
                     </li>
             </nav>
-            <div class="socials">
+            <div class="socials footer__socials">
                 <ul class="social__list">
                     <li class="social__item social__icon-tg">
                         <a href="#" class="social__link">
@@ -239,9 +259,9 @@
                     </li>
                 </ul>
             </div>
-            <address class="footer__contacts">
+            <address class="contacts footer__contacts">
                 <div class="contacts__text">Бесплатный звонок по России</div>
-                <a href="#" class="footer__contacts-phone"> 8 800 700 30 30 </a>
+                <a href="#" class="contacts__phone"> 8 800 700 30 30 </a>
             </address>
             </div>
         </footer>
